@@ -22,7 +22,7 @@ llm =ChatGroq(
 
 System_p = "You are a helpful AI assistant who provides clear and concise responses."
 
-def dot():
+def bot():
     conv_history = [SystemMessage(content=System_p)]  # Initialize conversation history
     while True:
         Input_P = input("You: ")
@@ -39,4 +39,4 @@ def dot():
         print(f"AI: {ai_response.content}")
 
 if __name__ == "__main__":
-    dot()   
+    bot()   
